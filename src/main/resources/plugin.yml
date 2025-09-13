@@ -1,0 +1,25 @@
+name: ShieldFix
+main: me.effx_.shieldFix.ShieldFix
+version: 1.6
+api-version: 1.19
+author: effx_
+softdepend:
+  - PlaceholderAPI
+commands:
+  shieldset:
+    description: Set shield delay for a player (admin)
+    usage: /shieldset <player> <value>
+  shielddelay:
+    description: Manage your shield delay (get/set/inc/dec/reload)
+    usage: /shielddelay <get|set|inc|dec|reload> ...
+permissions:
+  shieldfix.set.others:
+    default: op
+  shieldfix.set.self:
+    default: true
+  shieldfix.modify.self:
+    default: true
+  shieldfix.get.others:
+    default: op
+  shieldfix.reload:
+    default: op

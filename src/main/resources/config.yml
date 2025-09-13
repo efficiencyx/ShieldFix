@@ -1,0 +1,47 @@
+#Just leave it on...
+notify-updates: true
+
+#Shield Cooldowns
+#Set the delay for the shield to work Default: 0
+shielddelay: 0
+
+#You can setup a custom cooldown for other players (If you hate/love them yk)
+custom-cooldown: 1
+
+#With This permission players will have the custom cooldown
+custom-cooldown-perms: "test"
+custom-cooldown-players:
+  - your_enemy
+  - your_friend
+
+#Please leave this on it helps me a lot to grow
+credits: false
+
+# Feature toggles
+features:
+  commands:
+    enable: true         # enables /shieldset & /shielddelay
+  papi:
+    enable: true         # enables PlaceholderAPI's expansion
+  player_delays:
+    enable: true         # enables support for personal delays (player-delays section)
+  shield_event:
+    enable: true         # if false disables logic in PlayerInteract event
+
+# Limits
+limits:
+  min-delay: 0
+  max-delay: 20
+
+# Per-player delays (uuid -> value). Do not manually touch or you COULD break everything!
+player-delays:
+# e.g.
+# "2a09550e-b4cb-45be-b37e-708048303812": 0
+
+# Messages
+messages:
+  no-perm: "&cNo permission."
+  commands-disabled: "&cCommands are disabled in the config."
+
+#Told by md_5 I can't use the Support config for easier support as it seems malicious, so you will need to contact me on telegram, Sorry
+#support: @zNecron
